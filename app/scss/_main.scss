@@ -1,5 +1,10 @@
 .Main {
-  min-height: calc(100vh - 100px);
+  width: 100%;
+  .container-fluid {
+    > .row {
+      height: 100%;
+    }
+  }
 }
 .Main__copy {
   bottom: 125px;
@@ -15,4 +20,7 @@
 .Title {
   font-family: $dinBold;
   font-size: 2rem;
+  @media screen and (max-width: 1400px) {
+    font-size: 1.5rem;
+  }
 }

@@ -2,7 +2,9 @@ body {
   background: $bodyBg url('./../images/bg-red.jpg') 0 0 repeat-y;
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
   color: $textColor;
+  flex-wrap: wrap;
   font-family: $dinLight;
   font-size: 16px;
   min-height: 100vh;

@@ -1,5 +1,6 @@
 .Header {
   padding: .5rem 0;
+  width: 100%;
 }
 .Header__logo {
 }
@@ -18,9 +19,12 @@
   width: 100%;
   li {
     border-right: 1px solid rgba(white, .3);
+    display: flex;
+    align-items: center;
     flex: 1 1 auto;
     font-family: $dinMedium;
     font-size: 1.125rem;
+    justify-content: center;
     list-style: none;
     padding: .8rem .5rem;
     text-align: center;

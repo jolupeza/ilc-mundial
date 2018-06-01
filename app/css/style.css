@@ -10028,7 +10028,12 @@ body {
   background: #ffffff url("./../images/bg-red.jpg") 0 0 repeat-y;
   background-attachment: fixed;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #232323;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-family: "dinlight", san-serif;
   font-size: 16px;
   min-height: 100vh;
@@ -10222,7 +10227,8 @@ li {
       background-color: rgba(235, 186, 18, 0.8); }
 
 .Header {
-  padding: .5rem 0; }
+  padding: .5rem 0;
+  width: 100%; }
 
 .Header__menu {
   background-color: #d11a2c;
@@ -10246,11 +10252,20 @@ li {
   width: 100%; }
   .Header__list li {
     border-right: 1px solid rgba(255, 255, 255, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     font-family: "dinmedium", san-serif;
     font-size: 1.125rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     list-style: none;
     padding: .8rem .5rem;
     text-align: center;
@@ -10267,7 +10282,9 @@ li {
         color: #ebba12; }
 
 .Main {
-  min-height: calc(100vh - 100px); }
+  width: 100%; }
+  .Main .container-fluid > .row {
+    height: 100%; }
 
 .Main__copy {
   bottom: 125px;
@@ -10285,6 +10302,9 @@ li {
 .Title {
   font-family: "dinbold", san-serif;
   font-size: 2rem; }
+  @media screen and (max-width: 1400px) {
+    .Title {
+      font-size: 1.5rem; } }
 
 .Form__group {
   margin-bottom: 1rem; }
@@ -10310,7 +10330,8 @@ li {
     background-color: rgba(235, 186, 18, 0.1);
     border-color: rgba(235, 186, 18, 0.5);
     -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 186, 18, 0.25);
-    box-shadow: 0 0 0 0.2rem rgba(235, 186, 18, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(235, 186, 18, 0.25);
+    color: black; }
   @media screen and (max-width: 991px) {
     .Form__control {
       line-height: 2rem; } }
