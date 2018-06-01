@@ -1,0 +1,36 @@
+.Tabs__list {
+  background-color: #f4f6f9;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  .nav-item {
+    display: flex;
+    font-family: $dinMedium;
+    flex: 1 1 auto;
+    font-size: 1.375rem;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    a {
+      border-top: 10px solid transparent;
+      color: #abaeba;
+      display: block;
+      padding: 1rem 0;
+      width: 100%;
+      &.active {
+        background-color: #fff;
+        border-top-color: $accentColor;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        color: $firstColor;
+      }
+    }
+  }
+}
+.Tabs__content {
+  padding: 1rem;
+  li {
+    color: $firstColor;
+    font-family: $dinMedium;
+    font-size: 1.625rem;
+  }
+}

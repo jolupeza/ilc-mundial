@@ -10,6 +10,9 @@ body {
   min-height: 100vh;
   position: relative;
 }
+.Body--sky {
+  background-image: url('./../images/bg-sky.jpg');
+}
 .Underline {
   border-bottom: 3px solid $accentColor;
   padding: 0 .8rem;
@@ -146,6 +149,9 @@ li {
 }
 .textColorBg {
   background-color: $textColor;
+}
+.textOpenLight {
+  font-family: $openLight;
 }
 .ArrowTop {
   background-color: $firstColor;

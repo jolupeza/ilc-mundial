@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10034,10 +10035,13 @@ body {
   color: #232323;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "dinlight", san-serif;
+  font-family: "dinlight", sans-serif;
   font-size: 16px;
   min-height: 100vh;
   position: relative; }
+
+.Body--sky {
+  background-image: url("./../images/bg-sky.jpg"); }
 
 .Underline {
   border-bottom: 3px solid #ebba12;
@@ -10169,6 +10173,9 @@ li {
 .textColorBg {
   background-color: #232323; }
 
+.textOpenLight {
+  font-family: "Open Sans", sans-serif; }
+
 .ArrowTop {
   background-color: #002243;
   border: none;
@@ -10192,7 +10199,7 @@ li {
   border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  font-family: "dinbold", san-serif;
+  font-family: "dinbold", sans-serif;
   font-size: 1.25rem;
   padding: .5rem 2.5rem;
   -webkit-transition: background-color 0.3s ease-out, color 0.2s ease-in;
@@ -10261,7 +10268,7 @@ li {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    font-family: "dinmedium", san-serif;
+    font-family: "dinmedium", sans-serif;
     font-size: 1.125rem;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -10277,7 +10284,7 @@ li {
       .Header__list li a:focus, .Header__list li a:hover {
         color: #ebba12; }
     .Header__list li.active {
-      font-family: "dinbold", san-serif; }
+      font-family: "dinbold", sans-serif; }
       .Header__list li.active a {
         color: #ebba12; }
 
@@ -10300,11 +10307,18 @@ li {
   padding: .5rem 2rem; }
 
 .Title {
-  font-family: "dinbold", san-serif;
+  font-family: "dinbold", sans-serif;
   font-size: 2rem; }
   @media screen and (max-width: 1400px) {
     .Title {
       font-size: 1.5rem; } }
+
+.Main__tabs {
+  background-color: #fff;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  min-height: 450px; }
 
 .Form__group {
   margin-bottom: 1rem; }
@@ -10401,36 +10415,42 @@ li {
 .Form__preview img {
   width: 100px; }
 
-.Box {
-  -ms-flex-line-pack: justify;
-  align-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 3rem; }
+.Tabs__list {
+  background-color: #f4f6f9;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem; }
+  .Tabs__list .nav-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "dinmedium", sans-serif;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 1.375rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase; }
+    .Tabs__list .nav-item a {
+      border-top: 10px solid transparent;
+      color: #abaeba;
+      display: block;
+      padding: 1rem 0;
+      width: 100%; }
+      .Tabs__list .nav-item a.active {
+        background-color: #fff;
+        border-top-color: #ebba12;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        color: #002243; }
 
-.Box__figure, .Box__title {
-  width: 100%; }
-
-.Box__figure {
-  -webkit-transform: rotate(1deg);
-  -ms-transform: rotate(1deg);
-  transform: rotate(1deg); }
-  .Box__figure img {
-    border: 15px solid transparent;
-    -o-border-image: url("./../images/frame.png") 15 15 round;
-    border-image: url("./../images/frame.png") 15 15 round;
-    max-height: 300px; }
-
-.Box__title {
-  font-size: 3.25rem; }
-  @media screen and (max-width: 991px) {
-    .Box__title {
-      font-size: 2.5rem; } }
+.Tabs__content {
+  padding: 1rem; }
+  .Tabs__content li {
+    color: #002243;
+    font-family: "dinmedium", sans-serif;
+    font-size: 1.625rem; }
 
 /*# sourceMappingURL=maps/style.css.map */
