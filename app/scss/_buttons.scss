@@ -1,0 +1,41 @@
+.Btn {
+  @include border-radius(.5rem);
+  border: none;
+  cursor: pointer;
+  font-family: $dinBold;
+  font-size: 1.25rem;
+  padding: .5rem 2.5rem;
+  @include transition(background-color .3s ease-out, color .2s ease-in);
+  &--ghost {
+    background-color: transparent;
+    border: 2px solid $firstColor;
+    color: $firstColor;
+    &:focus, &:hover {
+      background-color: $firstColor;
+      color: white;
+    }
+    &--second {
+      border-color: $secondColor;
+      color: $secondColor;
+      &:focus, &:hover {
+        background-color: $secondColor;
+        color: white;
+      }
+    }
+    &--accent {
+      border-color: $accentColor;
+      color: $accentColor;
+      &:focus, &:hover {
+        background-color: $accentColor;
+        color: white;
+      }
+    }
+  }
+  &--accent {
+    background-color: $accentColor;
+    color: white;
+    &:focus, &:hover {
+      background-color: rgba($accentColor, .8);
+    }
+  }
+}

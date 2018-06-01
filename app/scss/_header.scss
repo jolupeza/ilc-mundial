@@ -1,0 +1,44 @@
+.Header {
+  padding: .5rem 0;
+}
+.Header__logo {
+}
+.Header__menu {
+  background-color: $secondColor;
+  border-radius: .5rem;
+  box-shadow: 1px 2px 8px rgba(black, .5);
+  display: flex;
+  padding: 0 .5rem;
+}
+.Header__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 100%;
+  li {
+    border-right: 1px solid rgba(white, .3);
+    flex: 1 1 auto;
+    font-family: $dinMedium;
+    font-size: 1.125rem;
+    list-style: none;
+    padding: .8rem .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    &:last-child {
+      border-right: none;
+    }
+    a {
+      color: white;
+      &:focus, &:hover {
+        color: $accentColor;
+      }
+    }
+    &.active {
+      font-family: $dinBold;
+      a {
+        color: $accentColor;
+      }
+    }
+  }
+}

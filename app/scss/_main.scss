@@ -1,0 +1,18 @@
+.Main {
+  min-height: calc(100vh - 100px);
+}
+.Main__copy {
+  bottom: 125px;
+  left: -105px;
+  position: fixed;
+  transform: rotate(-90deg);
+}
+.Main__box {
+  background-color: rgba(white, .3);
+  border-radius: .8rem;
+  padding: .5rem 2rem;
+}
+.Title {
+  font-family: $dinBold;
+  font-size: 2rem;
+}

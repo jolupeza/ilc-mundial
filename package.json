@@ -1,0 +1,50 @@
+{
+  "name": "ilc-mundial",
+  "version": "1.0.0",
+  "description": "Landing ILC - Mundial Rusia 2018",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jolupeza/ilc-mundial"
+  },
+  "keywords": [
+    "Inversiones La Cruz",
+    "Landing page",
+    "Mundial",
+    "Rusia 2018",
+    "Fútbol"
+  ],
+  "author": "José Pérez <joseluis@watson.pe>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jolupeza/ilc-mundial/issues"
+  },
+  "homepage": "https://github.com/jolupeza/ilc-mundial#README",
+  "devDependencies": {
+    "animate.css": "^3.6.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.1.1",
+    "browser-sync": "^2.24.4",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3",
+    "popper.js": "^1.14",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^11.1.0"
+  }
+}

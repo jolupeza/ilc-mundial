@@ -1,0 +1,24 @@
+.Box {
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.Box__figure, .Box__title {
+  width: 100%;
+}
+.Box__figure {
+  transform: rotate(1deg);
+  img {
+    border: 15px solid transparent;
+    border-image: url('./../images/frame.png') 15 15 round;
+    max-height: 300px;
+  }
+}
+.Box__title {
+  font-size: 3.25rem;
+  @media screen and (max-width: 991px) {
+    font-size: 2.5rem;
+  }
+}

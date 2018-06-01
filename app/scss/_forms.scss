@@ -1,0 +1,117 @@
+.Form {
+
+}
+.Form__group {
+  margin-bottom: 1rem;
+  &.has-error {
+    .Form__label {
+      color: rgba($dangerColor, .8);
+    }
+    .Form__control {
+      border-color: rgba($dangerColor, .4);
+      box-shadow: 0 0 0 .2rem rgba($dangerColor, .6);
+    }
+    .help-block {
+      color: rgba($dangerColor, .8);
+    }
+  }
+}
+.Form__label {
+  color: $textColor;
+}
+.Form__control {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid $textColor;
+  color: black;
+  &:focus {
+    background-color: rgba($accentColor, .1);
+    border-color: rgba($accentColor, .5);
+    box-shadow: 0 0 0 .2rem rgba($accentColor, .25);
+  }
+  @media screen and (max-width: 991px) {
+    line-height: 2rem;
+  }
+}
+.Form__file__container {
+  background-color: $secondColor;
+  border-radius: 1.5rem;
+  color: $textColor;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  padding: .5rem 0;
+  position: relative;
+  text-align: center;
+  i[class^="icon-"] {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+}
+.Form__control__file {
+  color: $textColor;
+  cursor: pointer;
+  display: inline-block;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+.Form__check__label {
+}
+
+.Form__check__container {
+  margin-right: 1rem;
+  overflow: hidden;
+  position: relative;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media screen and (max-width: 991px) {
+    margin-right: 2rem;
+  }
+  .form-check-label {
+    color: $textColor;
+    font-size: 3rem;
+    @media screen and (max-width: 991px) {
+      font-size: 3.5rem;
+    }
+  }
+}
+.Form__check__input {
+  &--custom {
+    color: $textColor;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
+  &:checked {
+    + {
+      .form-check-label {
+        color: $accentColor;
+      }
+    }
+  }
+}
+.Form__buttons {
+  button {
+    margin-right: 1rem;
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+}
+.Form__preview {
+  img {
+    width: 100px;
+  }
+}
