@@ -36,6 +36,7 @@
     color: white;
     &:focus, &:hover {
       background-color: rgba($accentColor, .8);
+      color: white;
     }
   }
 }

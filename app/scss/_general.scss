@@ -13,6 +13,13 @@ body {
 .Body--sky {
   background-image: url('./../images/bg-sky.jpg');
 }
+.Body--hinchada {
+  .Main__figure {
+    img {
+      width: 60%;
+    }
+  }
+}
 .Underline {
   border-bottom: 3px solid $accentColor;
   padding: 0 .8rem;
@@ -149,6 +156,12 @@ li {
 }
 .textColorBg {
   background-color: $textColor;
+}
+.textDinBold {
+  font-family: $dinBold;
+}
+.textDinMedium {
+  font-family: $dinMedium;
 }
 .textOpenLight {
   font-family: $openLight;

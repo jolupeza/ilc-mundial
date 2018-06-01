@@ -10043,6 +10043,9 @@ body {
 .Body--sky {
   background-image: url("./../images/bg-sky.jpg"); }
 
+.Body--hinchada .Main__figure img {
+  width: 60%; }
+
 .Underline {
   border-bottom: 3px solid #ebba12;
   padding: 0 .8rem; }
@@ -10173,6 +10176,12 @@ li {
 .textColorBg {
   background-color: #232323; }
 
+.textDinBold {
+  font-family: "dinbold", sans-serif; }
+
+.textDinMedium {
+  font-family: "dinmedium", sans-serif; }
+
 .textOpenLight {
   font-family: "Open Sans", sans-serif; }
 
@@ -10231,7 +10240,8 @@ li {
     background-color: #ebba12;
     color: white; }
     .Btn--accent:focus, .Btn--accent:hover {
-      background-color: rgba(235, 186, 18, 0.8); }
+      background-color: rgba(235, 186, 18, 0.8);
+      color: white; }
 
 .Header {
   padding: .5rem 0;
@@ -10319,6 +10329,47 @@ li {
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   min-height: 450px; }
+
+.Count__title {
+  font-size: 3.25rem;
+  letter-spacing: 20px; }
+
+.Count__number {
+  font-size: 6.25rem;
+  line-height: 1; }
+  .Count__number span.flag {
+    position: relative;
+    z-index: 9; }
+    .Count__number span.flag:before, .Count__number span.flag:after {
+      background-color: red;
+      content: "";
+      display: inline-block;
+      height: 80px;
+      position: absolute;
+      -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+      transform: skew(-20deg);
+      top: 10px;
+      width: 25px; }
+    .Count__number span.flag:before {
+      left: 0; }
+    .Count__number span.flag::after {
+      left: 50px; }
+  .Count__number span.number {
+    position: relative;
+    z-index: 99; }
+
+.List {
+  padding-left: 0; }
+  .List li {
+    border-bottom: 1px solid rgba(35, 35, 35, 0.5);
+    font-family: "dinmedium", sans-serif;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: .5rem 0;
+    text-align: center; }
+    .List li:hover {
+      color: #d11a2c; }
 
 .Form__group {
   margin-bottom: 1rem; }
