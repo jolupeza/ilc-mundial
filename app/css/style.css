@@ -10317,6 +10317,7 @@ li {
   padding: .5rem 2rem; }
 
 .Title {
+  color: white;
   font-family: "dinbold", sans-serif;
   font-size: 2rem; }
   @media screen and (max-width: 1400px) {
@@ -10374,29 +10375,30 @@ li {
 .Form__group {
   margin-bottom: 1rem; }
   .Form__group.has-error .Form__label {
-    color: rgba(220, 53, 69, 0.8); }
+    color: #d11a2c;
+    font-family: "dinbold", sans-serif; }
   .Form__group.has-error .Form__control {
-    border-color: rgba(220, 53, 69, 0.4);
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.6);
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.6); }
+    border-color: rgba(209, 26, 44, 0.4);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(209, 26, 44, 0.6);
+    box-shadow: 0 0 0 0.2rem rgba(209, 26, 44, 0.6); }
   .Form__group.has-error .help-block {
-    color: rgba(220, 53, 69, 0.8); }
+    color: rgba(209, 26, 44, 0.9); }
 
 .Form__label {
-  color: #232323; }
+  color: white; }
 
 .Form__control {
   background-color: transparent;
   border-radius: 0;
   border: none;
-  border-bottom: 1px solid #232323;
-  color: black; }
+  border-bottom: 2px solid white;
+  color: white; }
   .Form__control:focus {
     background-color: rgba(235, 186, 18, 0.1);
     border-color: rgba(235, 186, 18, 0.5);
     -webkit-box-shadow: 0 0 0 0.2rem rgba(235, 186, 18, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(235, 186, 18, 0.25);
-    color: black; }
+    color: white; }
   @media screen and (max-width: 991px) {
     .Form__control {
       line-height: 2rem; } }
@@ -10437,7 +10439,7 @@ li {
     .Form__check__container {
       margin-right: 2rem; } }
   .Form__check__container .form-check-label {
-    color: #232323;
+    color: white;
     font-size: 3rem; }
     @media screen and (max-width: 991px) {
       .Form__check__container .form-check-label {
