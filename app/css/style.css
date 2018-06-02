@@ -10144,7 +10144,7 @@ li {
   color: #d11a2c; }
 
 .thirdColor {
-  color: #5b9cd6; }
+  color: #03223e; }
 
 .accentColor {
   color: #ebba12; }
@@ -10165,7 +10165,7 @@ li {
   background-color: #d11a2c; }
 
 .thirdColorBg {
-  background-color: #5b9cd6; }
+  background-color: #03223e; }
 
 .accentColorBg {
   background-color: #ebba12; }
@@ -10501,9 +10501,13 @@ li {
 
 .Tabs__content {
   padding: 1rem; }
+  .Tabs__content ol {
+    padding-left: 30px; }
   .Tabs__content li {
-    color: #002243;
+    color: #03223e;
     font-family: "dinmedium", sans-serif;
+    font-size: 1.625rem; }
+  .Tabs__content p, .Tabs__content h3 {
     font-size: 1.625rem; }
 
 /*# sourceMappingURL=maps/style.css.map */

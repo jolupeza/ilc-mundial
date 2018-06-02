@@ -28,9 +28,15 @@
 }
 .Tabs__content {
   padding: 1rem;
+  ol {
+    padding-left: 30px;
+  }
   li {
-    color: $firstColor;
+    color: $thirdColor;
     font-family: $dinMedium;
+    font-size: 1.625rem;
+  }
+  p, h3 {
     font-size: 1.625rem;
   }
 }
