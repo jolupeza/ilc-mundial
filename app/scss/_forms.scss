@@ -5,23 +5,20 @@
   margin-bottom: 1rem;
   &.has-error {
     .Form__label {
-      color: $secondColor;
+      color: darken($secondColor, 15%);
       font-family: $dinBold;
     }
     .Form__control {
-      border-color: rgba($secondColor, .4);
-      box-shadow: 0 0 0 .2rem rgba($secondColor, .6);
+      border-color: rgba(darken($secondColor, 15%), .4);
+      box-shadow: 0 0 0 .2rem rgba(darken($secondColor, 15%), .6);
     }
     .help-block {
-      color: rgba($secondColor, .9);
+      color: darken($secondColor, 15%);
     }
   }
 }
 .Form__label {
   color: white;
-  // @media screen and (max-width: 991px) {
-  //   color: $textColor;
-  // }
 }
 .Form__control {
   background-color: transparent;
@@ -34,13 +31,8 @@
     border-color: rgba($accentColor, .5);
     box-shadow: 0 0 0 .2rem rgba($accentColor, .25);
     color: white;
-    // @media screen and (max-width: 991px) {
-    //   color: $textColor;
-    // }
   }
   @media screen and (max-width: 991px) {
-    // border-bottom-color: $textColor;
-    // color: $textColor;
     line-height: 2rem;
   }
 }

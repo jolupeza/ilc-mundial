@@ -10477,14 +10477,14 @@ li {
 .Form__group {
   margin-bottom: 1rem; }
   .Form__group.has-error .Form__label {
-    color: #e13b52;
+    color: #b41c31;
     font-family: "dinbold", sans-serif; }
   .Form__group.has-error .Form__control {
-    border-color: rgba(225, 59, 82, 0.4);
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(225, 59, 82, 0.6);
-    box-shadow: 0 0 0 0.2rem rgba(225, 59, 82, 0.6); }
+    border-color: rgba(180, 28, 49, 0.4);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(180, 28, 49, 0.6);
+    box-shadow: 0 0 0 0.2rem rgba(180, 28, 49, 0.6); }
   .Form__group.has-error .help-block {
-    color: rgba(225, 59, 82, 0.9); }
+    color: #b41c31; }
 
 .Form__label {
   color: white; }
@@ -10632,6 +10632,12 @@ li {
   z-index: 999; }
   .Sidebar.active {
     left: 0; }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    .Sidebar {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 
 .Sidebar__header, .Sidebar__menu {
   width: 100%; }
@@ -10641,6 +10647,10 @@ li {
 
 .Sidebar__logo a {
   display: block; }
+
+@media screen and (max-width: 767px) {
+  .Sidebar__logo {
+    width: 75%; } }
 
 .Sidebar__close {
   color: white;
@@ -10680,5 +10690,8 @@ li {
       color: white; }
       .Sidebar__list li a:hover {
         color: #ebba12; }
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+      .Sidebar__list li {
+        margin-bottom: 2rem; } }
 
 /*# sourceMappingURL=maps/style.css.map */
