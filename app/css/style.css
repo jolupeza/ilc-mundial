@@ -10318,10 +10318,17 @@ li {
 
 .Title {
   font-family: "dinbold", sans-serif;
-  font-size: 2rem; }
+  font-size: 3rem; }
   @media screen and (max-width: 1400px) {
     .Title {
-      font-size: 1.5rem; } }
+      font-size: 2rem; } }
+
+.Subtitle {
+  font-family: "dinbold", sans-serif;
+  font-size: 2.5rem; }
+  @media screen and (max-width: 1400px) {
+    .Subtitle {
+      font-size: 2rem; } }
 
 .Main__tabs {
   background-color: #fff;
