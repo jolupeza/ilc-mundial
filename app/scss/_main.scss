@@ -68,6 +68,11 @@
   @media screen and (max-width: 1400px) {
     font-size: 2rem;
   }
+  &--awards {
+    @media screen and (max-width: 991px) {
+      margin-top: 6rem;
+    }
+  }
 }
 .Subtitle {
   font-family: $dinBold;

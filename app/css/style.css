@@ -10431,6 +10431,9 @@ li {
   @media screen and (max-width: 1400px) {
     .Title {
       font-size: 2rem; } }
+  @media screen and (max-width: 991px) {
+    .Title--awards {
+      margin-top: 6rem; } }
 
 .Subtitle {
   font-family: "dinbold", sans-serif;

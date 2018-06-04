@@ -11,14 +11,14 @@
   <header class="Header">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col-8 col-lg-6">
           <h1 class="Header__logo text-center">
             <a href="index.html">
               <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
             </a>
           </h1>
         </div>
-        <div class="col-6">
+        <div class="col-6 d-none d-lg-block">
           <nav class="Header__menu">
             <ul class="Header__list">
               <li><a href="index.html">Participa</a></li>
@@ -28,14 +28,38 @@
             </ul>
           </nav>
         </div>
+        <div class="col-4 d-lg-none text-right">
+          <aside class="Header__toggle mr-2 menu-toggle">
+            <i class="Header__toggle__icon"></i>
+          </aside>
+        </div>
       </div>
     </div>
   </header>
 
+  <aside class="Sidebar d-flex d-lg-none">
+    <header class="Sidebar__header">
+      <h1 class="Sidebar__logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
+        </a>
+      </h1>
+      <aside class="Sidebar__close menu-toggle"><i class="icon-close"></i></aside>
+    </header>
+    <nav class="Sidebar__menu d-flex">
+      <ul class="Sidebar__list text-center d-flex">
+        <li><a href="index.html">Participa</a></li>
+        <li class="active"><a href="premios.html">Premios</a></li>
+        <li><a href="nuestra-hinchada.html">Nuestra hinchada</a></li>
+        <li><a href="como-ganar.html">¿Cómo ganar?</a></li>
+      </ul>
+    </nav>
+  </aside>
+
   <main class="Main d-flex">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-5 col-xl-4">
+        <div class="col-lg-5 col-xl-4 order-1 order-lg-0">
           <h2 class="whiteColor Subtitle text-center">Premios en la web</h2>
           <p class="h2 whiteColor text-center textDinMedium mb-0">10 kits mundialistas*</p>
           <p class="h3 whiteColor text-center">* Cada kit está conformado por: 1 mochila, 1 gorro, 1 pulsera, 1 polo ILC, 4 vasos cerveceros, 4 chops y 4 cartillas (fixture).</p>
@@ -45,9 +69,9 @@
           <p class="h2 whiteColor text-center textDinMedium mb-3">87 camisetas originales de la selección peruana</p>
           <p class="h2 whiteColor text-center textDinMedium mb-0">Raspa y gana con miles de premios</p>
         </div>
-        <div class="col-7 col-xl-8 align-self-xl-end">
-          <h2 class="Title whiteColor text-center text-uppercase mb-4">¡Participa y <span class="accentColor">Gana</span> camisetas originales de la selección y kits mundialistas!</h2>
-          <figure class="text-center mb-0">
+        <div class="col-lg-7 col-xl-8 align-self-xl-end order-0 order-lg-1">
+          <h2 class="Title Title--awards whiteColor text-center text-uppercase mb-4">¡Participa y <span class="accentColor">Gana</span> camisetas originales de la selección y kits mundialistas!</h2>
+          <figure class="text-center mb-5 mb-lg-0">
             <img src="images/premios.png" alt="Premios" class="img-fluid" />
           </figure>
         </div>
