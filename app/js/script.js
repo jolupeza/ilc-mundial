@@ -39,7 +39,25 @@ function verifyMedia () {
       icon.removeClass(iconClass).addClass(iconClass + '-select').data('select', true);
     });
 
-    $('#picture').on('change', fileValidation);
+    $('.js-move-scroll').on('click', function (event) {
+      event.preventDefault();
+      var $this = $(this),
+          dest = $this.attr('href');
+
+      $('html, body').stop().animate({
+        scrollTop: $(dest).offset().top
+      }, 1000);
+    });
+
+    $('.menu-toggle').on('click', function () {
+      var sidebar = $('.Sidebar');
+
+      if (sidebar.hasClass('active')) {
+        sidebar.removeClass('active');
+      } else {
+        sidebar.addClass('active');
+      }
+    });
 
     //$window.on('resize',  function () {
     //  verifyMedia();
@@ -67,29 +85,6 @@ function verifyMedia () {
         icon.removeClass(iconClass).addClass(iconClass.slice(0, -7));
       }
     });
-  };
-
-  var fileValidation = function fileValidation() {
-    var fileInput = document.getElementById('picture'),
-        filePath = fileInput.value,
-        allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
-
-    if (!allowedExtensions.exec(filePath)) {
-      document.getElementById('imagePreview').innerHTML = '';
-
-      alert('Cargue el archivo con extensiones .jpeg/.jpg/.png/.gif.');
-      fileInput.value = '';
-      return false;
-    } else {
-      //Image preview
-      if (fileInput.files && fileInput.files[0]) {
-        var reader = new FileReader();
-        reader.onload = function (e) {
-          document.getElementById('imagePreview').innerHTML = '<img src="' + e.target.result + '" class="img-fluid" />';
-        };
-        reader.readAsDataURL(fileInput.files[0]);
-      }
-    }
   };
 })(jQuery);
 //# sourceMappingURL=script.js.map

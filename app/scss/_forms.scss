@@ -19,6 +19,9 @@
 }
 .Form__label {
   color: white;
+  // @media screen and (max-width: 991px) {
+  //   color: $textColor;
+  // }
 }
 .Form__control {
   background-color: transparent;
@@ -31,8 +34,13 @@
     border-color: rgba($accentColor, .5);
     box-shadow: 0 0 0 .2rem rgba($accentColor, .25);
     color: white;
+    // @media screen and (max-width: 991px) {
+    //   color: $textColor;
+    // }
   }
   @media screen and (max-width: 991px) {
+    // border-bottom-color: $textColor;
+    // color: $textColor;
     line-height: 2rem;
   }
 }
@@ -80,6 +88,7 @@
     color: white;
     font-size: 3rem;
     @media screen and (max-width: 991px) {
+      // color: $textColor;
       font-size: 3.5rem;
     }
   }

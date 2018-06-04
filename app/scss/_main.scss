@@ -6,11 +6,51 @@
     }
   }
 }
+.Main__figure {
+  @media screen and (max-width: 991px) {
+    align-content: center;
+    // background: $bodyBg url('./../images/bg-red.jpg') 0 0 no-repeat;
+    // background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+    img {
+      @media screen and (max-width: 991px) and (orientation: landscape) {
+        width: 40%;
+      }
+    }
+  }
+}
 .Main__copy {
   bottom: 125px;
   left: -105px;
   position: fixed;
   transform: rotate(-90deg);
+  @media screen and (max-width: 991px) {
+    position: static;
+    text-align: center;
+    transform: rotate(0deg);
+    width: 100%;
+  }
+}
+.Main__goto {
+  bottom: 25px;
+  font-family: $dinMedium;
+  font-size: 1.5rem;
+  position: absolute;
+  width: 100%;
+  i[class^="icon-"] {
+    font-size: 3rem;
+  }
+  .Btn__link {
+    &:focus {
+      color: white;
+    }
+  }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    bottom: 5px;
+  }
 }
 .Main__box {
   background-color: rgba(white, .3);
@@ -23,6 +63,9 @@
   @media screen and (max-width: 1400px) {
     font-size: 2rem;
   }
+  /* @media screen and (max-width: 991px) {
+    color: $firstColor;
+  } */
 }
 .Subtitle {
   font-family: $dinBold;

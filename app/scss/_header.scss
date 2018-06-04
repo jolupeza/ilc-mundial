@@ -1,6 +1,11 @@
 .Header {
   padding: .5rem 0;
   width: 100%;
+  @media screen and (max-width: 991px) {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+  }
 }
 .Header__logo {
 }
@@ -44,5 +49,33 @@
         color: $accentColor;
       }
     }
+  }
+}
+.Header__toggle {
+  background-color: $secondColor;
+  box-shadow: 1px 1px 5px rgba(black, .5);
+  cursor: pointer;
+  display: inline-block;
+  padding: .5rem .8rem .8rem;
+}
+.Header__toggle__icon {
+  background-color: #fff;
+  display: inline-block;
+  height: 5px;
+  position: relative;
+  width: 30px;
+  &:before, &:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 30px;
+  }
+  &:before {
+    top: -10px;
+  }
+  &:after {
+    bottom: -10px;
   }
 }
