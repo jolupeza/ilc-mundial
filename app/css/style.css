@@ -10067,6 +10067,18 @@ body {
 
 .Body--sky {
   background-image: url("./../images/bg-sky.jpg"); }
+  .Body--sky .Main__goto a {
+    color: #002243; }
+    .Body--sky .Main__goto a:focus {
+      color: #002243; }
+
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .Body--hinchada .Main__portada {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; } }
 
 .Body--hinchada .Main__figure img {
   width: 60%; }
@@ -10360,7 +10372,7 @@ li {
     height: 100%; }
 
 @media screen and (max-width: 991px) {
-  .Main__figure {
+  .Main__portada {
     -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-box;
@@ -10370,9 +10382,10 @@ li {
     flex-wrap: wrap;
     height: 100vh;
     position: relative; } }
-  @media screen and (max-width: 991px) and (max-width: 991px) and (orientation: landscape) {
-    .Main__figure img {
-      width: 40%; } }
+
+@media screen and (max-width: 991px) and (max-width: 991px) and (orientation: landscape) {
+  .Main__figure img {
+    width: 40%; } }
 
 .Main__copy {
   bottom: 125px;
@@ -10390,8 +10403,11 @@ li {
       transform: rotate(0deg);
       width: 100%; } }
 
+.Main__count {
+  width: 100%; }
+
 .Main__goto {
-  bottom: 25px;
+  bottom: 15px;
   font-family: "dinmedium", sans-serif;
   font-size: 1.5rem;
   position: absolute;
@@ -10411,10 +10427,7 @@ li {
 
 .Title {
   font-family: "dinbold", sans-serif;
-  font-size: 3rem;
-  /* @media screen and (max-width: 991px) {
-    color: $firstColor;
-  } */ }
+  font-size: 3rem; }
   @media screen and (max-width: 1400px) {
     .Title {
       font-size: 2rem; } }
@@ -10436,10 +10449,17 @@ li {
 .Count__title {
   font-size: 3.25rem;
   letter-spacing: 20px; }
+  @media screen and (max-width: 767px) {
+    .Count__title {
+      font-size: 2.5rem;
+      letter-spacing: 15px; } }
 
 .Count__number {
   font-size: 6.25rem;
   line-height: 1; }
+  @media screen and (max-width: 767px) {
+    .Count__number {
+      font-size: 5rem; } }
   .Count__number span.flag {
     position: relative;
     z-index: 9; }
@@ -10454,6 +10474,9 @@ li {
       transform: skew(-20deg);
       top: 10px;
       width: 25px; }
+      @media screen and (max-width: 767px) {
+        .Count__number span.flag:before, .Count__number span.flag:after {
+          height: 65px; } }
     .Count__number span.flag:before {
       left: 0; }
     .Count__number span.flag::after {

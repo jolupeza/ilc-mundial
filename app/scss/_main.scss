@@ -6,15 +6,17 @@
     }
   }
 }
-.Main__figure {
+.Main__portada {
   @media screen and (max-width: 991px) {
     align-content: center;
-    // background: $bodyBg url('./../images/bg-red.jpg') 0 0 no-repeat;
-    // background-size: cover;
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
     position: relative;
+  }
+}
+.Main__figure {
+  @media screen and (max-width: 991px) {
     img {
       @media screen and (max-width: 991px) and (orientation: landscape) {
         width: 40%;
@@ -34,8 +36,11 @@
     width: 100%;
   }
 }
+.Main__count {
+  width: 100%;
+}
 .Main__goto {
-  bottom: 25px;
+  bottom: 15px;
   font-family: $dinMedium;
   font-size: 1.5rem;
   position: absolute;
@@ -63,9 +68,6 @@
   @media screen and (max-width: 1400px) {
     font-size: 2rem;
   }
-  /* @media screen and (max-width: 991px) {
-    color: $firstColor;
-  } */
 }
 .Subtitle {
   font-family: $dinBold;
@@ -83,10 +85,17 @@
 .Count__title {
   font-size: 3.25rem;
   letter-spacing: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+  }
 }
 .Count__number {
   font-size: 6.25rem;
   line-height: 1;
+  @media screen and (max-width: 767px) {
+    font-size: 5rem;
+  }
   span.flag {
     position: relative;
     z-index: 9;
@@ -99,6 +108,9 @@
       transform: skew(-20deg);
       top: 10px;
       width: 25px;
+      @media screen and (max-width: 767px) {
+        height: 65px;
+      }
     }
     &:before {
       left: 0;

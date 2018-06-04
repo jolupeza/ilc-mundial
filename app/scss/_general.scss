@@ -9,14 +9,25 @@ body {
   font-size: 16px;
   min-height: 100vh;
   position: relative;
-  // @media screen and (max-width: 991px) {
-  //   background-image: none;
-  // }
 }
 .Body--sky {
   background-image: url('./../images/bg-sky.jpg');
+  .Main__goto {
+    a {
+      color: $firstColor;
+      &:focus {
+        color: $firstColor;
+      }
+    }
+  }
 }
 .Body--hinchada {
+  .Main__portada {
+    @media screen and (max-width: 991px) and (orientation: landscape) {
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
   .Main__figure {
     img {
       width: 60%;

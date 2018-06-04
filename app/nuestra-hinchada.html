@@ -11,14 +11,14 @@
   <header class="Header">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col-8 col-lg-6">
           <h1 class="Header__logo text-center">
             <a href="index.html">
               <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
             </a>
           </h1>
         </div>
-        <div class="col-6">
+        <div class="col-6 d-none d-lg-block">
           <nav class="Header__menu">
             <ul class="Header__list">
               <li><a href="index.html">Participa</a></li>
@@ -28,24 +28,53 @@
             </ul>
           </nav>
         </div>
+        <div class="col-4 d-lg-none text-right">
+          <aside class="Header__toggle mr-2 menu-toggle">
+            <i class="Header__toggle__icon"></i>
+          </aside>
+        </div>
       </div>
     </div>
   </header>
 
+  <aside class="Sidebar d-flex d-lg-none">
+    <header class="Sidebar__header">
+      <h1 class="Sidebar__logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
+        </a>
+      </h1>
+      <aside class="Sidebar__close menu-toggle"><i class="icon-close"></i></aside>
+    </header>
+    <nav class="Sidebar__menu d-flex">
+      <ul class="Sidebar__list text-center d-flex">
+        <li><a href="index.html">Participa</a></li>
+        <li><a href="premios.html">Premios</a></li>
+        <li class="active"><a href="nuestra-hinchada.html">Nuestra hinchada</a></li>
+        <li><a href="como-ganar.html">¿Cómo ganar?</a></li>
+      </ul>
+    </nav>
+  </aside>
+
   <main class="Main d-flex">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-6">
-          <figure class="Main__figure text-center mb-0">
-            <img src="images/banner.png" alt="¡Arma tu Hinchada!" class="img-fluid" />
-          </figure>
-          <aside class="Main__count">
-            <h3 class="h1 text-center text-uppercase textDinMedium mb-0">Somos</h3>
-            <h5 class="text-center textDinBold firstColor Count__number mb-0"><span class="d-inline-block flag"><span class="number">999 999</span></span></h5>
-            <h2 class="text-center text-uppercase textDinBold Count__title">Hinchas</h2>
-          </aside>
+        <div class="col-lg-6">
+          <section class="Main__portada">
+            <figure class="Main__figure text-center mb-lg-0">
+              <img src="images/banner.png" alt="¡Arma tu Hinchada!" class="img-fluid d-block m-auto" />
+            </figure>
+            <aside class="Main__count">
+              <h3 class="h1 text-center text-uppercase textDinMedium mb-0">Somos</h3>
+              <h5 class="text-center textDinBold firstColor Count__number mb-0"><span class="d-inline-block flag"><span class="number">999 999</span></span></h5>
+              <h2 class="text-center text-uppercase textDinBold Count__title">Hinchas</h2>
+            </aside>
+            <aside class="Main__goto text-center d-lg-none">
+              <a href="#content" class="js-move-scroll Btn__link text-uppercase whiteColor"><i class="icon-arrow_downward d-block"></i>Conócelos</a>
+            </aside>
+          </section>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6" id="content">
           <h2 class="Title firstColor text-center text-uppercase mb-4">Nuestra hinchada para el mundial</h2>
 
           <ul class="List mb-5">
