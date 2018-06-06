@@ -14,6 +14,8 @@ function verifyMedia () {
   let $window = $(window);
 
   $(function () {
+    showLinks();
+
     $window.on('scroll', () => {
       checkScroll();
     });
@@ -85,6 +87,16 @@ function verifyMedia () {
         icon.removeClass(iconClass).addClass(iconClass.slice(0, -7));
       }
     });
+  }
+
+  let showLinks = () => {
+    let links = $('#showLinks');
+
+    if (links.length) {
+      setTimeout(function () {
+        links.removeClass('d-none');
+      }, 10000);
+    }
   }
 })(jQuery);
 

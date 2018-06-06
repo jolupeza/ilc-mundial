@@ -19,6 +19,14 @@
 }
 .Form__label {
   color: white;
+  font-size: 1.125rem;
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      color: $firstColor;
+    }
+  }
 }
 .Form__control {
   background-color: transparent;

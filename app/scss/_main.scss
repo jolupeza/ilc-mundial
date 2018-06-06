@@ -5,9 +5,17 @@
       height: 100%;
     }
   }
+  &--fluid {
+    margin: 0 auto;
+    width: 90%;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
 }
 .Main__portada {
   @media screen and (max-width: 991px) {
+    align-items: center;
     align-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -25,11 +33,14 @@
   }
 }
 .Main__copy {
-  bottom: 125px;
-  left: -105px;
+  bottom: 110px;
+  font-family: $dinMedium;
+  left: -80px;
   position: fixed;
   transform: rotate(-90deg);
   @media screen and (max-width: 991px) {
+    color: $accentColor;
+    margin-top: 4rem;
     position: static;
     text-align: center;
     transform: rotate(0deg);
@@ -40,9 +51,9 @@
   width: 100%;
 }
 .Main__goto {
-  bottom: 15px;
+  bottom: 35px;
   font-family: $dinMedium;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   position: absolute;
   width: 100%;
   i[class^="icon-"] {
@@ -64,11 +75,10 @@
 }
 .Title {
   font-family: $dinBold;
-  font-size: 3rem;
-  @media screen and (max-width: 1400px) {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
+  line-height: 1.07em;
   &--awards {
+    margin-bottom: 5rem;
     @media screen and (max-width: 991px) {
       margin-top: 6rem;
     }
@@ -76,10 +86,7 @@
 }
 .Subtitle {
   font-family: $dinBold;
-  font-size: 2.5rem;
-  @media screen and (max-width: 1400px) {
-    font-size: 2rem;
-  }
+  font-size: 2rem;
 }
 .Main__tabs {
   background-color: #fff;
@@ -105,34 +112,12 @@
     font-size: 5rem;
   }
   span.flag {
-    position: relative;
-    z-index: 9;
-    &:before, &:after {
-      background-color: red;
-      content: "";
-      display: inline-block;
-      height: 80px;
-      position: absolute;
-      transform: skew(-20deg);
-      top: 10px;
-      width: 25px;
-      @media screen and (max-width: 767px) {
-        height: 65px;
-      }
-    }
-    &:before {
-      left: 0;
-    }
-    &::after {
-      left: 50px;
-    }
-  }
-  span.number {
-    position: relative;
-    z-index: 99;
+    background: transparent url('./../images/bandera.png') center 0 no-repeat;
   }
 }
 .List {
+  max-height: 500px;
+  overflow-y: auto;
   padding-left: 0;
   li {
     border-bottom: 1px solid rgba($textColor, .5);

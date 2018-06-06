@@ -102,7 +102,7 @@ gulp.task('js-sync', ['compress'], () => {
 
 gulp.task('browsersync', ['compress', 'style'], () => {
   sync.init({
-    proxy: "ilc-mundial.front",
+    proxy: "ilc.mundial.front",
     browser: "firefox"
     //browser: ["chrome", "firefox", "google-chrome"]
   });

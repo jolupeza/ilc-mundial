@@ -30,7 +30,7 @@ body {
   }
   .Main__figure {
     img {
-      width: 60%;
+      width: 70%;
     }
   }
 }
@@ -46,7 +46,6 @@ a {
   transition: color .3s ease-out, background-color .2s ease-in-out;
   &.hover, &:focus, &:hover {
     color: $firstColor;
-    text-decoration: none;
   }
 }
 blockquote {
@@ -179,6 +178,9 @@ li {
 }
 .textOpenLight {
   font-family: $openLight;
+}
+.wordBreak {
+  word-break: break-word;
 }
 .ArrowTop {
   background-color: $firstColor;

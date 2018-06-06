@@ -1,7 +1,8 @@
 .Header {
-  padding: .5rem 0;
+  padding: 2rem 0;
   width: 100%;
   @media screen and (max-width: 991px) {
+    padding: 1rem 0;
     position: absolute;
     top: 0;
     z-index: 99;
@@ -52,8 +53,6 @@
   }
 }
 .Header__toggle {
-  background-color: $secondColor;
-  box-shadow: 1px 1px 5px rgba(black, .5);
   cursor: pointer;
   display: inline-block;
   padding: .5rem .8rem .8rem;

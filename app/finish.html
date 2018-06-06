@@ -3,75 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Inversiones La Cruz - Día de la Madre</title>
+  <title>Inversiones La Cruz - ¡Arma tu hinchada!</title>
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <main class="Main Main--fluid m-auto">
+  <header class="Header">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <article class="Main__slogan mt-5 mt-lg-0">
-            <figure class="Main__slogan__figure text-center mb-0">
-              <img src="images/picture-award.png" alt="Día de la Madre" class="img-fluid" />
-            </figure>
-          </article>
+        <div class="col-9 col-lg-6">
+          <h1 class="Header__logo text-center">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
+            </a>
+          </h1>
         </div>
-        <div class="col-lg-6">
-          <header class="Header mt-4 mb-5 mt-lg-0">
-            <h1 class="Header__logo text-center">
-              <a href="index.html">
-                <img class="img-fluid" src="./images/logo.png" alt="Inversiones La Cruz" />
-              </a>
-            </h1>
-          </header>
-          <h1 class="Main__resalt text-center firstColor big">María Sánchez</h1>
-          <h1 class="Main__resalt text-center accentColor big">¡Gracias por participar!</h1>
+        <div class="col-6 d-none d-lg-block">
+          <nav class="Header__menu">
+            <ul class="Header__list">
+              <li class="active"><a href="index.html">Participa</a></li>
+              <li><a href="premios.html">Premios</a></li>
+              <li><a href="nuestra-hinchada.html">Nuestra hinchada</a></li>
+              <li><a href="como-ganar.html">¿Cómo ganar?</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-3 d-lg-none text-right">
+          <aside class="Header__toggle menu-toggle">
+            <i class="Header__toggle__icon"></i>
+          </aside>
         </div>
       </div>
+    </div>
+  </header>
 
-      <h1 class="Main__resalt accentColor text-center mb-5 mt-5 big">Conoce a nuestras <span class="fontMasterBreak d-block">Madres&nbsp;&nbsp;Luchadoras</span></h1>
+  <aside class="Sidebar d-flex d-lg-none">
+    <header class="Sidebar__header">
+      <h1 class="Sidebar__logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
+        </a>
+      </h1>
+      <aside class="Sidebar__close menu-toggle"><i class="icon-close"></i></aside>
+    </header>
+    <nav class="Sidebar__menu d-flex">
+      <ul class="Sidebar__list text-center d-flex">
+        <li class="active"><a href="index.html">Participa</a></li>
+        <li><a href="premios.html">Premios</a></li>
+        <li><a href="nuestra-hinchada.html">Nuestra hinchada</a></li>
+        <li><a href="como-ganar.html">¿Cómo ganar?</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-      <div class="row">
-        <div class="col-sm-6 col-md-4 Box">
-          <figure class="Box__figure text-center">
-            <img src="images/photo.jpg" alt="" class="img-fluid" />
-          </figure>
-          <h3 class="Box__title accentColor text-center">María Sánchez</h3>
+  <main class="Main Main--fluid d-flex">
+    <div class="container-fluid">
+      <div class="row align-items-lg-center">
+        <div class="col-lg-6">
+          <section class="Main__portada">
+            <figure class="Main__figure text-center mb-0">
+              <img src="images/banner.png" alt="¡Arma tu Hinchada!" class="img-fluid d-block m-auto" />
+            </figure>
+            <aside class="Main__goto text-center d-lg-none">
+              <a href="#content" class="js-move-scroll Btn__link text-uppercase whiteColor"><i class="icon-arrow_downward d-block animated infinite bounce"></i></a>
+            </aside>
+          </section>
         </div>
-        <div class="col-sm-6 col-md-4 Box">
-          <figure class="Box__figure text-center">
-            <img src="images/joseluis.jpg" alt="" class="img-fluid" />
-          </figure>
-          <h3 class="Box__title accentColor text-center">María Sánchez</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 Box">
-          <figure class="Box__figure text-center">
-            <img src="images/angular.png" alt="" class="img-fluid" />
-          </figure>
-          <h3 class="Box__title accentColor text-center">María Sánchez</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 Box">
-          <figure class="Box__figure text-center">
-            <img src="images/joseluis.jpg" alt="" class="img-fluid" />
-          </figure>
-          <h3 class="Box__title accentColor text-center">María Sánchez</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 Box">
-          <figure class="Box__figure text-center">
-            <img src="images/photo.jpg" alt="" class="img-fluid" />
-          </figure>
-          <h3 class="Box__title accentColor text-center">María Sánchez</h3>
-        </div>
-        <div class="col-sm-6 col-md-4 Box">
-          <figure class="Box__figure text-center">
-            <img src="images/angular.png" alt="" class="img-fluid" />
-          </figure>
-          <h3 class="Box__title accentColor text-center">María Sánchez</h3>
+        <div class="col-lg-6" id="content">
+          <section class="mb-3">
+            <h2 class="Title whiteColor text-center mb-5">Para completar tu registro invita a un amigo a ser parte de <span class="accentColor text-uppercase">La Hinchada</span></h2>
+
+            <p class="text-center textDinMedium mt-5 whiteColor d-none" id="showLinks"><a href="" class="whiteColor">Nuestra hinchada</a> | <a href="" class="whiteColor">Nuestros premios</a></p>
+          </section>
         </div>
       </div>
     </div>
   </main>
+
+  <aside class="Main__copy">
+    <h5>Desarrollado por <a href="http://watson.pe" target="_blank" rel="noopener noreferrer">Agencia Watson</a></h5>
+  </aside>
+
+  <script src="js/min/bundle.js"></script>
+  <script src="js/min/script.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
   <header class="Header">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-8 col-lg-6">
+        <div class="col-9 col-lg-6">
           <h1 class="Header__logo text-center">
             <a href="index.html">
               <img src="images/logo.png" alt="Inversiones La Cruz" class="img-fluid" />
@@ -28,8 +28,8 @@
             </ul>
           </nav>
         </div>
-        <div class="col-4 d-lg-none text-right">
-          <aside class="Header__toggle mr-2 menu-toggle">
+        <div class="col-3 d-lg-none text-right">
+          <aside class="Header__toggle menu-toggle">
             <i class="Header__toggle__icon"></i>
           </aside>
         </div>
@@ -56,7 +56,7 @@
     </nav>
   </aside>
 
-  <main class="Main d-flex">
+  <main class="Main Main--fluid d-flex">
     <div class="container-fluid">
       <div class="row align-items-lg-center">
         <div class="col-lg-6">
@@ -65,39 +65,45 @@
               <img src="images/banner.png" alt="¡Arma tu Hinchada!" class="img-fluid d-block m-auto" />
             </figure>
             <aside class="Main__goto text-center d-lg-none">
-              <a href="#content" class="js-move-scroll Btn__link text-uppercase whiteColor"><i class="icon-arrow_downward d-block"></i>Participa</a>
+              <a href="#content" class="js-move-scroll Btn__link text-uppercase whiteColor"><i class="icon-arrow_downward d-block animated infinite bounce"></i></a>
             </aside>
           </section>
         </div>
         <div class="col-lg-6" id="content">
           <section class="mb-3">
-            <h2 class="Title whiteColor text-center">Ayúdanos a armar <span class="accentColor text-uppercase">La Hinchada</span> y participa por 10 kit mundialistas y 3 camisetas originales de la selección</h2>
+            <h2 class="Title whiteColor text-center mb-5">Ayúdanos a armar <span class="accentColor text-uppercase">La Hinchada</span> y participa por 10 kit mundialistas y 3 camisetas originales de la selección</h2>
 
             <form class="Form" action="">
-              <div class="form-row">
-                <div class="form-group Form__group col-md-6">
-                  <label for="name" class="Form__label">Nombres y Apellidos</label>
-                  <input type="text" class="form-control Form__control" name="name" id="name" autocomplete="off" />
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group Form__group">
+                    <label for="name" class="Form__label">Nombres y Apellidos</label>
+                    <input type="text" class="form-control Form__control" name="name" id="name" autocomplete="off" />
+                  </div>
                 </div>
-
-                <div class="form-group Form__group has-error col-md-6">
-                  <label for="dni" class="Form__label">D.N.I.</label>
-                  <input type="text" class="form-control Form__control" name="dni" id="dni" autocomplete="off" />
-                  <span class="help-block mt-2 d-block smaller">
-                    <strong>El campo Nombre es obligatorio.</strong>
-                  </span>
+                <div class="col-md-6">
+                  <div class="form-group Form__group has-error">
+                    <label for="dni" class="Form__label">D.N.I.</label>
+                    <input type="text" class="form-control Form__control" name="dni" id="dni" autocomplete="off" />
+                    <span class="help-block mt-2 d-block smaller">
+                      <strong>El campo Nombre es obligatorio.</strong>
+                    </span>
+                  </div>
                 </div>
               </div>
 
-              <div class="form-row">
-                <div class="form-group Form__group col-md-6">
-                  <label for="email" class="Form__label">Correo</label>
-                  <input type="email" class="form-control Form__control" name="email" id="email" autocomplete="off" />
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group Form__group">
+                    <label for="email" class="Form__label">Correo</label>
+                    <input type="email" class="form-control Form__control" name="email" id="email" autocomplete="off" />
+                  </div>
                 </div>
-
-                <div class="form-group Form__group col-md-6">
-                  <label for="phone" class="Form__label">Teléfono</label>
-                  <input type="text" class="form-control Form__control" name="phone" id="phone" autocomplete="off" />
+                <div class="col-md-6">
+                  <div class="form-group Form__group">
+                    <label for="phone" class="Form__label">Teléfono</label>
+                    <input type="text" class="form-control Form__control" name="phone" id="phone" autocomplete="off" />
+                  </div>
                 </div>
               </div>
 
@@ -143,7 +149,7 @@
               </p>
             </form>
 
-            <h2 class="Title whiteColor text-center">Para completar tu registro invita a un amigo a ser parte de <span class="accentColor text-uppercase">La Hinchada</span></h2>
+            <h2 class="Title whiteColor text-center mb-5">Para completar tu registro invita a un amigo a ser parte de <span class="accentColor text-uppercase">La Hinchada</span></h2>
           </section>
         </div>
       </div>
@@ -151,7 +157,7 @@
   </main>
 
   <aside class="Main__copy">
-    <h4>Desarrollado por Agencia Watson</h4>
+    <h5>Desarrollado por <a href="http://watson.pe" target="_blank" rel="noopener noreferrer">Agencia Watson</a></h5>
   </aside>
 
   <script src="js/min/bundle.js"></script>
