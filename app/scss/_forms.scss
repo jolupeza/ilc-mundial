@@ -5,15 +5,15 @@
   margin-bottom: 1rem;
   &.has-error {
     .Form__label {
-      color: darken($secondColor, 15%);
+      color: lighten($secondColor, 10%);
       font-family: $dinBold;
     }
     .Form__control {
-      border-color: rgba(darken($secondColor, 15%), .4);
-      box-shadow: 0 0 0 .2rem rgba(darken($secondColor, 15%), .6);
+      border-color: rgba(lighten($secondColor, 10%), .4);
+      box-shadow: 0 0 0 .2rem rgba(lighten($secondColor, 10%), .6);
     }
     .help-block {
-      color: darken($secondColor, 15%);
+      color: lighten($secondColor, 10%);
     }
   }
 }

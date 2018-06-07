@@ -8,6 +8,9 @@
   &--fluid {
     margin: 0 auto;
     width: 90%;
+    @media screen and (max-width: 1400px) {
+      width: 95%;
+    }
     @media screen and (max-width: 991px) {
       width: 100%;
     }
@@ -24,6 +27,10 @@
   }
 }
 .Main__figure {
+  width: 100%;
+  img {
+    animation-duration: 3s;
+  }
   @media screen and (max-width: 991px) {
     img {
       @media screen and (max-width: 991px) and (orientation: landscape) {
@@ -34,7 +41,6 @@
 }
 .Main__copy {
   bottom: 110px;
-  font-family: $dinMedium;
   left: -80px;
   position: fixed;
   transform: rotate(-90deg);
@@ -63,6 +69,9 @@
     &:focus {
       color: white;
     }
+    &:hover {
+      text-decoration: none;
+    }
   }
   @media screen and (max-width: 767px) and (orientation: landscape) {
     bottom: 5px;
@@ -82,6 +91,9 @@
     @media screen and (max-width: 991px) {
       margin-top: 6rem;
     }
+  }
+  &--small {
+    font-size: 1rem;
   }
 }
 .Subtitle {
@@ -116,7 +128,7 @@
   }
 }
 .List {
-  max-height: 500px;
+  max-height: 380px;
   overflow-y: auto;
   padding-left: 0;
   li {
