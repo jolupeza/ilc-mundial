@@ -14,13 +14,17 @@ function verifyMedia () {
   let $window = $(window);
 
   $(function () {
-    showLinks();
-
     $window.on('scroll', () => {
       checkScroll();
     });
 
+    $window.on('resize', () => {
+      scrollToBottom();
+    });
+
     checkScroll();
+    scrollToBottom();
+    showLinks();
 
     $('.ArrowTop').on('click', (ev) => {
       ev.preventDefault();
@@ -60,10 +64,6 @@ function verifyMedia () {
         sidebar.addClass('active');
       }
     });
-
-    //$window.on('resize',  function () {
-    //  verifyMedia();
-    //});
   });
 
   let checkScroll = () => {
@@ -97,6 +97,20 @@ function verifyMedia () {
         links.removeClass('d-none');
       }, 10000);
     }
+  }
+
+  let scrollToBottom = () => {
+    if (typeof scrollBottom === 'undefined' || !scrollBottom) {
+      return false;
+    }
+
+    if (window.matchMedia("(min-width: 992px)").matches) {
+      return false;
+    }
+
+    $('html, body').stop().animate({
+      scrollTop: $('#content').offset().top
+    }, 1000);
   }
 })(jQuery);
 
