@@ -1,15 +1,5 @@
 "use strict";
 
-/*******************************************************
-function verifyMedia () {
-  if (window.matchMedia("(max-width: 991px)").matches) {
-
-  } else {
-    console.log('Mi viewport es mayor o igual a 992px');
-  }
-}
-/*******************************************************/
-
 ;(function ($) {
   let $window = $(window);
 
@@ -95,7 +85,7 @@ function verifyMedia () {
     if (links.length) {
       setTimeout(function () {
         links.removeClass('d-none');
-      }, 10000);
+      }, 11000);
     }
   }
 
